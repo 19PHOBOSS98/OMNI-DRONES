@@ -58,6 +58,11 @@ It is a bit complicated for beginners to setup an omni-drone using VS+Tournament
 
 You can follow the [tutorial series](https://youtube.com/playlist?list=PL1bsn0MYd0U66LAyrpklsqIQDQLFjEzH0&si=2GKLiGcCHLSxidNb) at my YT channel to learn more.
 
+<a href="https://youtu.be/scK8bXvlTRU"><img src="https://github.com/user-attachments/assets/6c3aa62f-4617-4bf0-97da-efd5640ee0fd" width=1000></a>
+
+Here's also a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZBm6LGZzIw&si=p_5jTw0TJzlFv06-) of what I have of the system so far.
+
+
 ## SETTING UP
 
 ### MODPACK DOWNLOAD
