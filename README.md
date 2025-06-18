@@ -18,31 +18,31 @@ Some cool stuff about the library that I think worth mentioning:
       </p>
    </li>
    <li>
-      Pulse Width Modulation
+      <b>Pulse Width Modulation</b>
       <p> 
          - When using Redstone controlled thrusters for propulsion, the system uses PWM Redstone signals to have finer control over the thrusters. Redstone only operates in integer values ranging from 0 to 15, making it very difficult to have precise thrust vectoring without modulating the signals.
       </p>
    </li>
          
    <li>
-      Thrust Vectoring
+      <b>Thrust Vectoring</b>
       <p>
          - The system uses thrust vectoring techniques to allow omnidirectional flight. The net thrust of all the onboard thrusters controls the aircrafts position and orientation in space.
       </p>
    </li>
    <li>
-      Automatic Jacobian Matrix Construction
+      <b>Automatic Jacobian Matrix Construction</b>
       <p>
          - Here, a Jacobian matrix is used to map the needed net force and torque to the individual onboard thrusters' force and torque values to control the aircraft. I've made it so the system would build the matrix for you from a list of onboard active thrusters. 
       </p>
    </li>
-   <li>Swappable Feedback Controllers:
+   <li>Swappable <b>Feedback Controllers</b>:
       <p>
          - A feedback control loop is used to achive precise control over the aircraft's flight behaviour. I've mostly used P.I.D. controllers for the time being. Though, I've made it so that the framework allows the users to easily swapout the default controller with any feedback controller they might need or want.
       </p>
       <ul>
          <li>
-            PID Controllers
+            <b>PID Controllers</b>
             <p>
                - Proportional, Integral and Derivative feedback control is considered one of the simplest and widely used control loops in control systems. Here, I demonstrate the use of two of its most common forms:
             </p>
@@ -64,19 +64,19 @@ Some cool stuff about the library that I think worth mentioning:
          <li>
             More Feedback Controllers To Be Added
             <p>
-            - I plan to implement full-state feedback controllers like LQR and LQG in the future.
+            - I plan to implement <b>full-state feedback controllers</b> like <b>LQR and LQG</b> in the future.
             </p>
          </li>
       </ul>
    </li>
    <li>
-      Quaternion Orientation
+      <b>Quaternion</b> Orientation
       <p>
          - Instead of using Euler angles, I use quaternions to measure aircraft rotation errors. This helps to avoid gimbal lock and have the ship turn smoother. 
       </p>
    </li>
    <li>
-      Inertia Tensors
+      <b>Inertia Tensors</b>
       <p>
          - PID controllers would usually be enough to control rotation by itself, but setting the gains too often gets repetitive whenever the player changes the aircrafts form and weight distribution either while building or in combat. Though, unrealistic in the real world, including the inertia tensor in the control loop's plant model made it possible for the aircraft to adapt to structural changes in real time:
          <div align="center">
