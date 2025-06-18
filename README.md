@@ -12,24 +12,46 @@ The flight system demonstrates the following features:
 
 <ul>
    <li>
+      Support For Varried Flight Component Addons
+      <p>
+         - This flight system was originaly meant exclusively for redstone thrusters. However, Valkyrien Skies has a growing number of sub-mods. Most of which add different kinds of flight components to the game ranging from propellers, rotors and cola-rockets to ion-thrusters, jet engines and magic wands. This framework is meant to cater to a number of these components to let players build more than just redstone thrusters. 
+      </p>
+   </li>
+   <li>
       Pulse Width Modulation
       <p> 
-         -When utilizing Redstone Thrusters ([VS-Tournament Mod](https://modrinth.com/mod/vs-tournament)) for propulsion, the system uses PWM redstone signals to have finer control over the thrusters.
-         As Minecraft's power system, Redstone only operate in integer values ranging from 0 to 15, making it very difficult to have precise thrust vectoring.
+         - When using Redstone controlled thrusters for propulsion, the system uses PWM Redstone signals to have finer control over the thrusters. As Minecraft's power system, Redstone only operates in integer values ranging from 0 to 15, making it very difficult to have precise thrust vectoring without modulating the signals.
       </p>
    </li>
          
-   <li>Thrust Vectoring</li>
-   <li>Quaternion Orientation</li>
-   <li>Automatic Jacobian Matrix Construction</li>
-   <li>Support </li>
-   
-   <li>Swappable Feedback Controllers:
-         <ul>
-            <li>PID Controllers (Continuous/Discrete)</li>
-            <li>More To Be Added</li>
-         </ul>
+   <li>
+      Thrust Vectoring
+      <p>
+         - The system uses thrust vectoring techniques to allow omnidirectional flight. The net thrust of all the onboard thrusters dictates the aircrafts position and orientation in space.
+      </p>
    </li>
+   <li>
+      Automatic Jacobian Matrix Construction
+      <p>
+         - Here, a Jacobian matrix is used to map the calculated net force and torque to the individual onboard thrusters' force and torque values to control the aircraft.  
+      </p>
+   </li>
+   <li>Swappable Feedback Controllers:
+      <p>
+         - Here, a Jacobian matrix is used to map the calculated net force and torque to the individual onboard thrusters' force and torque values to control the aircraft.  
+      </p>
+      <ul>
+         <li>PID Controllers (Continuous/Discrete)</li>
+         <li>More To Be Added</li>
+      </ul>
+   </li>
+   <li>
+      Quaternion Orientation
+   </li>
+   
+   
+   
+   
 </ul>
 
 </p>
@@ -41,7 +63,7 @@ The flight system demonstrates the following features:
    
    <p>Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a> , Omni-Drones are semi-autonomous flying platforms with omnidirectional flight capabilities.
    
-   </br> I took inspiration from Lockheed Martin's Multiple Kill Vehicle demonstrations:
+   </br> I took inspiration from Lockheed Martin's MKV demonstrations:
    
    <a href="https://youtu.be/_CwcQoTN4Tc?si=o4Gecc5YxzVWgUeG"><img src="https://github.com/user-attachments/assets/fd9bffbb-cd10-46e3-a328-5644d479752f" width=500></a>
    </br>
