@@ -12,12 +12,6 @@ Some cool stuff about the library that I think is worth mentioning:
 
 <ul>
    <li>
-      Support For Varried Flight Components
-      <p>
-         - This flight system was originaly meant to exclusively use redstone thrusters but, Valkyrien Skies has a growing number of sub-mods. Most of them add different kinds of flight components to the game ranging from propellers, rotors and cola-rockets to ion-thrusters, jet engines and magic wands. This framework is meant to cater to a number of these components to let players build with more than just redstone thrusters. 
-      </p>
-   </li>
-   <li>
       <b>Pulse Width Modulation</b>
       <p> 
          - When using Redstone controlled thrusters for propulsion, the system uses PWM Redstone signals to have finer control over the thrusters. Redstone only operates in integer values ranging from 0 to 15, making it very difficult to have precise thrust vectoring without modulating the signals.
