@@ -6,14 +6,49 @@
 </br>[Valkyrien Skies 2 (VS2)](https://modrinth.com/mod/valkyrien-skies) is a Minecraft Mod that turns minecraft structures into physics objects. With it are an army of [addons](https://wiki.valkyrienskies.org/wiki/List_of_addons) that "add" stuff to make them fly among other things. Coupled with [ComputerCraft](https://modrinth.com/mod/cc-tweaked) we can achieve omnidirectional flight.
 
 </br>Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord.gg/dRTtrdK)) to learn more.
+
+</br>
+The flight system demonstrates the following features:
+
+<ul>
+   <li>
+      Pulse Width Modulation
+      <p> 
+         -When utilizing Redstone Thrusters ([VS-Tournament Mod](https://modrinth.com/mod/vs-tournament)) for propulsion, the system uses PWM redstone signals to have finer control over the thrusters.
+         As Minecraft's power system, Redstone only operate in integer values ranging from 0 to 15, making it very difficult to have precise thrust vectoring.
+      </p>
+   </li>
+         
+   <li>Thrust Vectoring</li>
+   <li>Quaternion Orientation</li>
+   <li>Automatic Jacobian Matrix Construction</li>
+   <li>Support </li>
+   
+   <li>Swappable Feedback Controllers:
+         <ul>
+            <li>PID Controllers (Continuous/Discrete)</li>
+            <li>More To Be Added</li>
+         </ul>
+   </li>
+</ul>
+
 </p>
 <div align="center">
    <h1>OMNI-DRONES</h1>
 </div>
 
 <div align="center">
+   
    <p>Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a> , Omni-Drones are semi-autonomous flying platforms with omnidirectional flight capabilities.
-      </br> I've mostly been using them as personal mobile weapons platforms:</p>
+   
+   </br> I took inspiration from Lockheed Martin's Multiple Kill Vehicle demonstrations:
+   
+   <a href="https://youtu.be/_CwcQoTN4Tc?si=o4Gecc5YxzVWgUeG"><img src="https://github.com/user-attachments/assets/fd9bffbb-cd10-46e3-a328-5644d479752f" width=500></a>
+   </br>
+   (click on the images to play videos)
+   </br>
+   
+   </br> I've mostly been using them as personal mobile weapons platforms:</p>
    <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/13752a40-b78b-4fd7-8433-c0f8ebf0710f" alt="divider180"></picture>
    <a href="https://youtu.be/V3nzxjTneVU?si=be4u1V4W7EaugcCa"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/2e28fdbd-9965-4669-9bbd-1f08b847e4fb" width=500></a>
    <a href="https://youtu.be/taD_ttDTe9o?si=I5Tb_lHbId45Q35O"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/7389152f-4932-49b3-94f5-349fe4b60b19" width=500></a>
