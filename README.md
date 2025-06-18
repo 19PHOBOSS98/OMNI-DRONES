@@ -8,9 +8,8 @@
 </br>Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord.gg/dRTtrdK)) to learn more.
 
 </br>
-The flight system demonstrates the following key concepts:
-</br>
-</br>
+Some stuff about the library that I think it's cool:
+
 <ul>
    <li>
       Support For Varried Flight Components
@@ -60,6 +59,7 @@ The flight system demonstrates the following key concepts:
                   - While not as accurate as continuous PID controllers, this can adapt to changing sample time durations. This makes it more suitable for laggy PVP servers.
                   </p>
                </li>
+            </ul>
          </li>
          <li>
             More Feedback Controllers To Be Added
@@ -71,9 +71,21 @@ The flight system demonstrates the following key concepts:
    </li>
    <li>
       Quaternion Orientation
+      <p>
+         - Instead of using Euler angles, I use quaternions to measure aircraft rotation errors. This helps to avoid gimbal lock and have the ship turn smoother. 
+      </p>
    </li>
    <li>
       Inertia Tensors
+      <p>
+         - PID controllers would usually be enough to control rotation by itself, but setting the gains too often gets repetitive whenever the player changes the aircrafts form and weight distribution either while building or in combat. Including the aircraft's Inertia Tensor in the control loop's plant model made it possible for the aircraft to adapt to structural changes in real time:
+         <div align="center">
+            </br>
+            (The pictures are linked to videos, click on'm!)
+            </br>
+            <a href="https://youtu.be/Kqf0vo2cnQA?si=FZWUhKSWGSw9sOlh"><img src="https://github.com/user-attachments/assets/0d73e731-f94c-417a-93f8-48bfdaf2e32e" width=500></a>
+         </div>
+      </p>
    </li>
    
    
@@ -93,9 +105,6 @@ The flight system demonstrates the following key concepts:
    </br> I took inspiration from Lockheed Martin's MKV demonstrations:
    
    <a href="https://youtu.be/_CwcQoTN4Tc?si=o4Gecc5YxzVWgUeG"><img src="https://github.com/user-attachments/assets/fd9bffbb-cd10-46e3-a328-5644d479752f" width=500></a>
-   </br>
-   (click on the images to play videos)
-   </br>
    
    </br> I've mostly been using them as personal mobile weapons platforms:</p>
    <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/13752a40-b78b-4fd7-8433-c0f8ebf0710f" alt="divider180"></picture>
