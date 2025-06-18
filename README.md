@@ -101,7 +101,7 @@ Some cool stuff about the library that I think is worth mentioning:
 
 <div align="center">
    
-   <p>Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a> , Omni-Drones are semi-autonomous flying platforms with omnidirectional flight capabilities.
+   <p>Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a>, are semi-autonomous flying platforms with omnidirectional flight capabilities.
    
    </br> I took inspiration from Lockheed Martin's MKV demonstrations:
    
