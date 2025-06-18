@@ -8,7 +8,7 @@
 </br>Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord.gg/dRTtrdK)) to learn more.
 
 </br>
-Some stuff about the library that I think it's cool:
+Some cool stuff about the library that I think worth mentioning:
 
 <ul>
    <li>
@@ -85,7 +85,7 @@ Some stuff about the library that I think it's cool:
             </br>
             <a href="https://youtu.be/Kqf0vo2cnQA?si=FZWUhKSWGSw9sOlh"><img src="https://github.com/user-attachments/assets/0d73e731-f94c-417a-93f8-48bfdaf2e32e" width=500></a>
          </div>
-      </br> In earlier versions of the mod, I had to calculate the inertia tensor myself from point cloud data (minecraft structure schematics).
+      </br> In earlier versions of the mod, I had to calculate the inertia tensor <a href="https://github.com/19PHOBOSS98/TILT_SHIP_MINECRAFT_SCHEMATIC_INERTIA_TENSOR_CALCULATOR">myself</a> from point cloud data (minecraft structure schematics).
       </p>
    </li>
    
