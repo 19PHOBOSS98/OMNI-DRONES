@@ -14,49 +14,49 @@ Some stuff about the library that I think it's cool:
    <li>
       Support For Varried Flight Components
       <p>
-         - This flight system was originaly meant to exclusively use redstone thrusters. However, Valkyrien Skies has a growing number of sub-mods. Most of which add different kinds of flight components to the game ranging from propellers, rotors and cola-rockets to ion-thrusters, jet engines and magic wands. This framework is meant to cater to a number of these components to let players build more than with just redstone thrusters. 
+         - This flight system was originaly meant to exclusively use redstone thrusters but, Valkyrien Skies has a growing number of sub-mods. Most of them add different kinds of flight components to the game ranging from propellers, rotors and cola-rockets to ion-thrusters, jet engines and magic wands. This framework is meant to cater to a number of these components to let players build with more than just redstone thrusters. 
       </p>
    </li>
    <li>
       Pulse Width Modulation
       <p> 
-         - When using Redstone controlled thrusters for propulsion, the system uses PWM Redstone signals to have finer control over the thrusters. As Minecraft's power system, Redstone only operates in integer values ranging from 0 to 15, making it very difficult to have precise thrust vectoring without modulating the signals.
+         - When using Redstone controlled thrusters for propulsion, the system uses PWM Redstone signals to have finer control over the thrusters. Redstone only operates in integer values ranging from 0 to 15, making it very difficult to have precise thrust vectoring without modulating the signals.
       </p>
    </li>
          
    <li>
       Thrust Vectoring
       <p>
-         - The system uses thrust vectoring techniques to allow omnidirectional flight. The net thrust of all the onboard thrusters dictates the aircrafts position and orientation in space.
+         - The system uses thrust vectoring techniques to allow omnidirectional flight. The net thrust of all the onboard thrusters controls the aircrafts position and orientation in space.
       </p>
    </li>
    <li>
       Automatic Jacobian Matrix Construction
       <p>
-         - Here, a Jacobian matrix is used to map the calculated net force and torque to the individual onboard thrusters' force and torque values to control the aircraft. I've made it so the system would build the matrix for you from a list of the onboard active thrusters. 
+         - Here, a Jacobian matrix is used to map the needed net force and torque to the individual onboard thrusters' force and torque values to control the aircraft. I've made it so the system would build the matrix for you from a list of onboard active thrusters. 
       </p>
    </li>
    <li>Swappable Feedback Controllers:
       <p>
-         - A feedback control loop is used to achive precise control over the aircraft's flight behaviour. For the time being, I've mostly used P.I.D. controllers. However, I've made it so that the framework allows the users to easily swapout the default controller with any feedback controller they might need.
+         - A feedback control loop is used to achive precise control over the aircraft's flight behaviour. I've mostly used P.I.D. controllers for the time being. Though, I've made it so that the framework allows the users to easily swapout the default controller with any feedback controller they might need or want.
       </p>
       <ul>
          <li>
             PID Controllers
             <p>
-               - Proportional, Integral and Derivative feedback control is considered one of the simplest and widely used control loops in control systems. Here I demonstrate the use of two of its most common forms:
+               - Proportional, Integral and Derivative feedback control is considered one of the simplest and widely used control loops in control systems. Here, I demonstrate the use of two of its most common forms:
             </p>
             <ul>
                <li>
                   Continuous
                   <p>
-                  - I used a continuous implementation of a PID controller when I started out building this library. It's meant to sample error values in a continuous time domain. That means it needs smooth FPS to work. When I started moving out of the test phase and into a laggy game server, I had to use a discrete PID controller.
+                  - I used a continuous implementation of a PID controller when I started out building this library. It's meant to sample error values in a continuous time domain. That means it needs smooth frame rates to work. When I started moving out of the test phase and into a laggy game server, I had to use a discrete PID controller.
                   </p>
                </li>
                <li>
                   Discrete
                   <p>
-                  - While not as accurate as continuous PID controllers, this can adapt to changing sample time durations. This makes it more suitable for laggy PVP servers.
+                  - While not as accurate as continuous PID controllers, this can adapt to changing sample time intervals. This makes it more suitable for laggy PVP servers.
                   </p>
                </li>
             </ul>
@@ -78,13 +78,14 @@ Some stuff about the library that I think it's cool:
    <li>
       Inertia Tensors
       <p>
-         - PID controllers would usually be enough to control rotation by itself, but setting the gains too often gets repetitive whenever the player changes the aircrafts form and weight distribution either while building or in combat. Including the aircraft's Inertia Tensor in the control loop's plant model made it possible for the aircraft to adapt to structural changes in real time:
+         - PID controllers would usually be enough to control rotation by itself, but setting the gains too often gets repetitive whenever the player changes the aircrafts form and weight distribution either while building or in combat. Including the inertia tensor in the control loop's plant model made it possible for the aircraft to adapt to structural changes in real time:
          <div align="center">
             </br>
             (The pictures are linked to videos, click on'm!)
             </br>
             <a href="https://youtu.be/Kqf0vo2cnQA?si=FZWUhKSWGSw9sOlh"><img src="https://github.com/user-attachments/assets/0d73e731-f94c-417a-93f8-48bfdaf2e32e" width=500></a>
          </div>
+      </br> In earlier versions of the mod, I had to calculate the inertia tensor myself from point cloud data (minecraft structure schematics).
       </p>
    </li>
    
