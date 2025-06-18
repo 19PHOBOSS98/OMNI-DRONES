@@ -8,13 +8,14 @@
 </br>Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord.gg/dRTtrdK)) to learn more.
 
 </br>
-The flight system demonstrates the following features:
-
+The flight system demonstrates the following key concepts:
+</br>
+</br>
 <ul>
    <li>
-      Support For Varried Flight Component Addons
+      Support For Varried Flight Components
       <p>
-         - This flight system was originaly meant exclusively for redstone thrusters. However, Valkyrien Skies has a growing number of sub-mods. Most of which add different kinds of flight components to the game ranging from propellers, rotors and cola-rockets to ion-thrusters, jet engines and magic wands. This framework is meant to cater to a number of these components to let players build more than just redstone thrusters. 
+         - This flight system was originaly meant to exclusively use redstone thrusters. However, Valkyrien Skies has a growing number of sub-mods. Most of which add different kinds of flight components to the game ranging from propellers, rotors and cola-rockets to ion-thrusters, jet engines and magic wands. This framework is meant to cater to a number of these components to let players build more than with just redstone thrusters. 
       </p>
    </li>
    <li>
@@ -33,20 +34,46 @@ The flight system demonstrates the following features:
    <li>
       Automatic Jacobian Matrix Construction
       <p>
-         - Here, a Jacobian matrix is used to map the calculated net force and torque to the individual onboard thrusters' force and torque values to control the aircraft.  
+         - Here, a Jacobian matrix is used to map the calculated net force and torque to the individual onboard thrusters' force and torque values to control the aircraft. I've made it so the system would build the matrix for you from a list of the onboard active thrusters. 
       </p>
    </li>
    <li>Swappable Feedback Controllers:
       <p>
-         - Here, a Jacobian matrix is used to map the calculated net force and torque to the individual onboard thrusters' force and torque values to control the aircraft.  
+         - A feedback control loop is used to achive precise control over the aircraft's flight behaviour. For the time being, I've mostly used P.I.D. controllers. However, I've made it so that the framework allows the users to easily swapout the default controller with any feedback controller they might need.
       </p>
       <ul>
-         <li>PID Controllers (Continuous/Discrete)</li>
-         <li>More To Be Added</li>
+         <li>
+            PID Controllers
+            <p>
+               - Proportional, Integral and Derivative feedback control is considered one of the simplest and widely used control loops in control systems. Here I demonstrate the use of two of its most common forms:
+            </p>
+            <ul>
+               <li>
+                  Continuous
+                  <p>
+                  - I used a continuous implementation of a PID controller when I started out building this library. It's meant to sample error values in a continuous time domain. That means it needs smooth FPS to work. When I started moving out of the test phase and into a laggy game server, I had to use a discrete PID controller.
+                  </p>
+               </li>
+               <li>
+                  Discrete
+                  <p>
+                  - While not as accurate as continuous PID controllers, this can adapt to changing sample time durations. This makes it more suitable for laggy PVP servers.
+                  </p>
+               </li>
+         </li>
+         <li>
+            More Feedback Controllers To Be Added
+            <p>
+            - I plan to implement full-state feedback controllers like LQR and LQG in the future.
+            </p>
+         </li>
       </ul>
    </li>
    <li>
       Quaternion Orientation
+   </li>
+   <li>
+      Inertia Tensors
    </li>
    
    
