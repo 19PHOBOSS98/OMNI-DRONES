@@ -8,7 +8,7 @@
 </br>Visit their discord servers: ([VS2](https://discord.gg/aWeNDCUTS6), [CC](https://discord.gg/dRTtrdK)) to learn more.
 
 </br>
-Some cool stuff about the library that I think worth mentioning:
+Some cool stuff about the library that I think is worth mentioning:
 
 <ul>
    <li>
