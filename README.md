@@ -7,8 +7,11 @@
    <p>Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a>, 
 </br>are semi-autonomous thrust-vector-controlled flying platforms with omnidirectional flight capabilities.
    
-   Depending on how you build them, they can take almost any form:
-   
+   You can build them in almost any shape you want:
+
+![ezgif-4c2db73d1c2a7c](https://github.com/user-attachments/assets/d5e1a6c8-4045-46db-8d1b-b390f3c495a1)
+
+
    
    </br> I took inspiration from Lockheed Martin's MKV demonstrations:
    </br> (Some of the pictures are linked to videos, click on 'm!)
