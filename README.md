@@ -5,9 +5,10 @@
 <div align="center">
    
    <p>Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a>, 
-</br>are semi-autonomous flying platforms with omnidirectional flight capabilities.
+</br>are semi-autonomous thrust-vector-controlled flying platforms with omnidirectional flight capabilities.
    
    </br> I took inspiration from Lockheed Martin's MKV demonstrations:
+   </br> (The pictures are linked to videos, click on 'm!)
    
    <a href="https://youtu.be/_CwcQoTN4Tc?si=o4Gecc5YxzVWgUeG"><img src="https://github.com/user-attachments/assets/fd9bffbb-cd10-46e3-a328-5644d479752f" width=500></a>
    
@@ -33,7 +34,7 @@
 <div align="center">
    <h1>OMNI-DRONE FLIGHT SYSTEM</h1>
 </div>
-<p>The Omni-Drone Flight System is an open-source Lua based [framework-library](https://github.com/19PHOBOSS98/OMNI-DRONE-LUA-LIBRARY/tree/main) for creating Omni-Drones in Modded Minecraft.
+<p><a href="https://github.com/19PHOBOSS98/OMNI-DRONE-LUA-LIBRARY/tree/main">The Omni-Drone Flight System</a> is an open-source Lua based framework-library for creating Omni-Drones in Modded Minecraft.
 
 </br>[Valkyrien Skies 2 (VS2)](https://modrinth.com/mod/valkyrien-skies) is a Minecraft Mod that turns player-built structures into physics objects. With it is a growing army of [addons](https://wiki.valkyrienskies.org/wiki/List_of_addons) that "add" stuff to make them fly among other things. Coupled with [ComputerCraft (CC)](https://modrinth.com/mod/cc-tweaked) we can achieve stable omnidirectional flight.
 
