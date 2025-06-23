@@ -1,4 +1,4 @@
-<div align="center">
+![2024-07-29_19 21 13](https://github.com/user-attachments/assets/fba13cdf-8fb3-4423-9145-34c7c110d7c9)<div align="center">
    <h1>OMNI-DRONES</h1>
 </div>
 
@@ -7,12 +7,16 @@
    <p>Formerly known as <a href="https://github.com/19PHOBOSS98/TILT-SHIP-FRAMEWORK-FOR-VALKYRIEN-SKIES-2-AND-COMPUTERCRAFT">Tilt-Ships</a>, 
 </br>are semi-autonomous thrust-vector-controlled flying platforms with omnidirectional flight capabilities.
    
+   Depending on how you build them, they can take almost any form:
+   
+   
    </br> I took inspiration from Lockheed Martin's MKV demonstrations:
-   </br> (The pictures are linked to videos, click on 'm!)
+   </br> (Some of the pictures are linked to videos, click on 'm!)
    
    <a href="https://youtu.be/_CwcQoTN4Tc?si=o4Gecc5YxzVWgUeG"><img src="https://github.com/user-attachments/assets/fd9bffbb-cd10-46e3-a328-5644d479752f" width=500></a>
-   
-   </br> I've mostly been using them as personal mobile weapons platforms:</p>
+
+
+   </br> I've mostly been using them as personal mobile weapon-platforms:</p>
    <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/13752a40-b78b-4fd7-8433-c0f8ebf0710f" alt="divider180"></picture>
    <a href="https://youtu.be/V3nzxjTneVU?si=be4u1V4W7EaugcCa"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/2e28fdbd-9965-4669-9bbd-1f08b847e4fb" width=500></a>
    <a href="https://youtu.be/taD_ttDTe9o?si=I5Tb_lHbId45Q35O"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/7389152f-4932-49b3-94f5-349fe4b60b19" width=500></a>
@@ -28,6 +32,13 @@
    <a href="https://youtu.be/XAGlgm_46qY"><img src="https://github.com/19PHOBOSS98/VS2-SKY-LEVIATHANS/assets/37253663/efd321a6-02b6-4e3f-b955-5c71b814307d"  width=1000 alt="yt"></a>
    <a href="https://youtu.be/V5mmxK4O3HE?si=v8nPOR1zxZWqaxC6"><img src="https://github.com/19PHOBOSS98/VS2-SKY-WHALES/assets/37253663/d5f47755-08ed-49e0-9e88-3532d6404a50" width=1000 alt="yt"></a>
    <a href="https://youtu.be/tyDpnHnf88o"><img src="https://github.com/user-attachments/assets/44a5f1a9-82ee-4f0f-a2d2-9ddb9073cdfd"  width=1000 alt="yt"></a>
+   <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/dd711759-589a-4317-a82f-671ab45baf45" alt="divider"></picture>
+</div>
+
+<div align="center">
+   <p>I also made customizable flight paths for them:</p>
+   <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/13752a40-b78b-4fd7-8433-c0f8ebf0710f" alt="divider180"></picture>
+   <a href="https://youtu.be/F2cJSpcBj5I"><img src="https://github.com/user-attachments/assets/d0ff3612-ab02-494a-afae-dfa007640a09"  width=1000 alt="yt"></a>
    <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/dd711759-589a-4317-a82f-671ab45baf45" alt="divider"></picture>
 </div>
 
@@ -61,7 +72,9 @@
    <picture><img src="https://github.com/19PHOBOSS98/Mirage/assets/37253663/dd711759-589a-4317-a82f-671ab45baf45" alt="divider"></picture>
 </div>
 
-## GETTING STARTED
+<div align="center">
+   <h1>GETTING STARTED</h1>
+</div>
 
 Omni-Drones are mostly known for using [VS+Tournament](https://modrinth.com/mod/vs-tournament) thrusters but there are other Valkyrien Skies addons that the Omni-Drone system can use to fly your ship!
 It is a bit complicated for beginners to setup an omni-drone using VS+Tournament so let's get you started using [VS+Kontraption](https://modrinth.com/mod/kontraption) instead!
@@ -73,7 +86,9 @@ You can follow the [tutorial series](https://youtube.com/playlist?list=PL1bsn0MY
 Here's also a [playlist](https://youtube.com/playlist?list=PL1bsn0MYd0U4KVn1mPNpDMmZBm6LGZzIw&si=p_5jTw0TJzlFv06-) of what I have of the system so far.
 
 
-## SETTING UP
+<div align="center">
+   <h1>SETTING UP</h1>
+</div>
 
 ### MODPACK DOWNLOAD
    You can get the modpack [here](https://www.planetminecraft.com/project/omni-drone-tutorial-part-4-world-save/).
