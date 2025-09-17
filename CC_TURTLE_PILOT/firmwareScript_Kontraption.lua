@@ -6,8 +6,7 @@ local quaternion = require "lib.quaternions"
 
 local instance_configs = {
 	ship_constants_config = {
-		PID_SETTINGS=
-		{
+		PID_SETTINGS= {
 			POS = { --Kontraption based omni-drones don't need a PID controller for rotation. Gyro Blocks control the rotation instead
 				P=0.05,
 				I=0.001,
@@ -18,6 +17,7 @@ local instance_configs = {
         	pos=vector.new(26,26,12), 	-- +X, +Y, +Z	-- this is how many ion thrusters Balyena has
         	neg=vector.new(26,26,12)	-- -X, -Y, -Z
     	},
+	}
 }
 
 local drone = DroneBaseClassKontraption(instance_configs)
