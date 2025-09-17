@@ -145,9 +145,9 @@ function drone:powerThrusters(component_redstone_power)
 end
 
 -- Watch this tutorial video to learn how to use this function: https://youtu.be/07Czgxqp0dk?si=gltpueMIgFjHpqJZ&t=269 (skip to 4:29)
--- function drone:getOffsetDefaultShipOrientation(default_ship_orientation)
--- 	return default_ship_orientation
--- end
+function drone:getOffsetDefaultShipOrientation(default_ship_orientation)
+	return default_ship_orientation
+end
 
 -- Watch this tutorial video to learn how to use this function: https://youtu.be/07Czgxqp0dk?si=gltpueMIgFjHpqJZ&t=269 (5:25 to 10:30)
 function drone:customFlightLoopBehavior(customFlightVariables)
