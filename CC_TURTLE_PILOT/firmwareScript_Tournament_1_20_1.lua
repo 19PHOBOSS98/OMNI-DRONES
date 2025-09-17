@@ -61,6 +61,7 @@ function drone:getThrusterList()--override to manually list down VS Tournament t
 	--force should be base ThrusterSpeed times thrusterTier
 	--check your .minecraft\config\valkyrienskies\vs_tournament_server.json > thrusterSpeed for the base thruster force. It's 10000 by default
 	--you're suppose to multiply it with the thruster tier number; press F3 and point at the thruster to see its tier number at the right side of the screen
+	--They don't need to be organized here, just make sure that their pos and force properties are correct
 	return {
 		{pos={x=0,y=2,z=0},force={x=0,y=10000*2,z=0}},
 		{pos={x=0,y=1,z=1},force={x=10000,y=0,z=0}},
